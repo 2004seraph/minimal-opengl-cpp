@@ -1,8 +1,8 @@
-# Install script for directory: /home/seraph/projects/CyanShaderLib
+# Install script for directory: /home/seraph/projects/minimal-opengl-cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/seraph/projects/CyanShaderLib/install/x64-debug")
+  set(CMAKE_INSTALL_PREFIX "/home/seraph/projects/minimal-opengl-cpp/install/x64-debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/seraph/projects/CyanShaderLib/build/x64-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/seraph/projects/minimal-opengl-cpp/build/x64-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

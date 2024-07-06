@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "6.9.3-76060903-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/seraph/projects/CyanShaderLib/scripts/toolchains/PrimaryToolChain.cmake")
+include("/home/seraph/projects/minimal-opengl-cpp/scripts/toolchains/PrimaryToolChain.cmake")
 
 set(CMAKE_SYSTEM "Linux-6.9.3-76060903-generic")
 set(CMAKE_SYSTEM_NAME "Linux")
