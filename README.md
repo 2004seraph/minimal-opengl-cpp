@@ -4,6 +4,7 @@
 
 - CMake
 - vcpkg for CMake: https://learn.microsoft.com/en-us/vcpkg/
+  - Set the `VCPKG_ROOT` environment variable to the root of your vcpkg installation.
 
 ## Build
 
