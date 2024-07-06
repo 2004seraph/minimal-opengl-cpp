@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+  "name": "cyanshaderlib",
+  "license": "MPL-2.0",
+  "version": "1.0.0",
+  "port-version": 0,
+  "dependencies": [
+    "glew",
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ],
+  "overrides": [
+    {
+      "name": "glew",
+      "version": "2.2.0"
+    },
+    {
+      "name": "glfw3",
+      "version": "3.3.8#1"
+    }
+  ],
+  "builtin-baseline": "e8bbe813151e45077fa70887b1f87ccce514701a",
+  "$default-features-explanation": "glfw3, stb and glm are required for this library's tests, you won't need them otherwise",
+  "default-features": [ "glfw3", "glm", "stb" ],
+  "features": {
+    "glfw3": {
+      "description": "The glfw3 windowing API",
+      "dependencies": [
+        {
+          "name": "glfw3"
+        }
+      ]
+    },
+    "glm": {
+      "description": "The glm library",
+      "dependencies": [
+        {
+          "name": "glm"
+        }
+      ]
+    },
+    "stb": {
+      "description": "The stb library",
+      "dependencies": [
+        {
+          "name": "stb"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+﻿{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "base",
+            "hidden": true,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "installDir": "${sourceDir}/install/${presetName}",
+            "cacheVariables": {
+
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Linux"
+            },
+            "toolchainFile": "scripts/toolchains/PrimaryToolChain.cmake"
+        },
+        {
+            "name": "x64-debug",
+            "displayName": "x64 Debug",
+            "inherits": "base",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "x64-release",
+            "displayName": "x64 Release",
+            "inherits": "x64-debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ],
+    "buildPresets":[
+        {
+            "name": "build-base",
+            "hidden": true,
+            "configurePreset": "x64-debug"
+        },
+        {
+            "name": "debug",
+            "displayName": "Build Debug",
+            "inherits": "build-base"
+        },
+        {
+            "name": "release",
+            "displayName": "Build Release",
+            "inherits": "build-base",
+            "configurePreset": "x64-release"
+        }
+    ]
+}
