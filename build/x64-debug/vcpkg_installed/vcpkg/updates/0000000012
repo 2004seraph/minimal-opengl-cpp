@@ -1,7 +1,0 @@
-Package: stb
-Version: 2021-09-10
-Architecture: x64-linux
-Multi-Arch: same
-Abi: b4aebe4408b8f1ee2e0cd36d239c811bc9c41b74f0c41a8bdfd635c80bea0c23
-Description: public domain header-only libraries
-Status: install ok half-installed
